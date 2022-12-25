@@ -9,11 +9,9 @@ let userName = "moe";
 console.log(`supsup ${userName}`);
 
 let compare = 4 < 5 // returns true or false 
-
 console.log(compare);
 
 let undefinedValue;
-
 console.log(undefinedValue);
 
 //using ' in a '' string

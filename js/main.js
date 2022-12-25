@@ -36,11 +36,7 @@ console.log(+valueOne + +valueTwo)
 
 let n = 2;
 
-n *= 3 + 5;
+n *= 3 + 5; //calculates the right side first
 
 console.log(n);
 
-
-let at = 10;
-
-console.log(at*9);
