@@ -85,28 +85,35 @@ if(age < 14 || age > 90){
 
 
 
-let promptMessage = prompt("who is there");
+// switch
 
-if( promptMessage === "admin"){
-    
-    let pass = prompt("Password?");
-    
-    if(pass === "pass"){
-        alert("welcome!");
-    }else if(pass === ' ' || pass === null){
-        alert("Canceled");
-    }else{
-        alert("wrong password");
-    }
-    
-    console.log(pass);
 
-}else if(promptMessage === ' ' || promptMessage === null){
-    alert("Canceled");
-}else{
-    alert("I dont know you");
+let count = 3;
+
+switch(count){
+    
+    case 1:
+        console.log("c one");
+        break;
+
+    case 2:
+        console.log("c two");
+        break;
+    
+    case 3:
+        console.log("c three");
+        break;   //if we comment break the next case will run with the current one         
+    default:
+        console.log("this is default");
 }
 
-console.log(promptMessage);
 
+// ? operator
+// let result = condition ? value1 : value2; 
+// the condition is evaluated: if its truthy then value1 is returned, otherwise - value2 .
+
+let ageN = 13;
+let accessAllowed = (ageN > 18 ) ? "bonk one" : "bonk two";
+
+console.log(accessAllowed);
 
