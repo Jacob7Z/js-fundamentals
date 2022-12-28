@@ -85,6 +85,19 @@ if(age < 14 || age > 90){
 
 
 
+// ? operator
+// let result = condition ? value1 : value2; 
+// the condition is evaluated: if its truthy then value1 is returned, otherwise - value2 .
+
+let ageN = 13;
+let accessAllowed = (ageN > 18 ) ? "bonk one" : "bonk two";
+
+console.log(accessAllowed);
+
+
+
+
+
 // switch
 
 
@@ -108,12 +121,71 @@ switch(count){
 }
 
 
-// ? operator
-// let result = condition ? value1 : value2; 
-// the condition is evaluated: if its truthy then value1 is returned, otherwise - value2 .
 
-let ageN = 13;
-let accessAllowed = (ageN > 18 ) ? "bonk one" : "bonk two";
 
-console.log(accessAllowed);
+
+let grade = 42;
+
+switch(true){    //The expression in parentheses to be evaluated is true in this example.
+                // This means that any case that evaluates to true will be a match.
+
+    case grade >= 50:   // if this is true the code will be executed
+        console.log("A");
+        break;
+        
+    case grade >= 40:
+        console.log("B");
+        break;        
+
+    case grade >= 30:
+        console.log("C");
+        break;
+
+    case grade >= 20:
+        console.log("D");
+    break;
+
+    default:
+        console.log("E");
+}
+
+
+
+let month = new Date().getMonth();
+// let month = 1
+console.log(month);
+
+switch(month){
+    case 0 :
+    case 1 :
+    case 2 :
+        console.log("Winter");
+        break;
+
+    case 3 :
+    case 4 :
+    case 5 :
+        console.log("Spring");
+        break;
+
+    case 6 :
+    case 7 :
+    case 8 :
+        console.log("Summer");
+        break;
+
+    case 9 :
+    case 10 :
+    case 11 :
+        console.log("Autumn");
+        break;
+
+    default:
+        console.log("something went wrong.");
+}
+
+
+
+
+
 
