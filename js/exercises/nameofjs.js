@@ -11,6 +11,8 @@
 // }
 
 
+
+
 let promptValue = prompt("Enter a number");
 
 if(promptValue < 0){
